@@ -1,9 +1,7 @@
 import streamlit as st
 import pandas as pd
 from sqlalchemy import create_engine, text
-
-engine = create_engine(
-    engine = sqlalchemy.create_engine("mysql+mysqlconnector://3qKZvyc8Bw7Ckf1.root:ixPIapSBo4owm2Qf@gateway01.ap-southeast-1.prod.aws.tidbcloud.com:4000/Asteroids"))
+engine = sqlalchemy.create_engine("mysql+mysqlconnector://3qKZvyc8Bw7Ckf1.root:ixPIapSBo4owm2Qf@gateway01.ap-southeast-1.prod.aws.tidbcloud.com:4000/Asteroids"))
 
 st.write("🔗 SQLAlchemy engine successfully created 👌")
 
