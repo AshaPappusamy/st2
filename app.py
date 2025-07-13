@@ -15,3 +15,10 @@ with engine.connect() as conn:
     df = pd.read_sql(text(query), conn)
 
 st.write(df)
+
+with engine.connect() as conn:
+    if selected_query.startswith(...):
+        result = conn.execute(text(...)).fetchall()
+        df = pd.DataFrame(result, columns=["neo_reference_id", "approach_count"])
+        st.write(df)
+
